@@ -27,7 +27,7 @@ function Card(props) {
     }
 
     return (
-        <div className="flex flex-col w-[300px] bg-[#22223b] rounded overflow-hidden ">
+        <div className="flex flex-col w-[300px] bg-[#22223b] rounded overflow-hidden  ">
             <div className="relative">
                 <img src={course.image.url} className="rounded" alt="Not Fetched" />
 
