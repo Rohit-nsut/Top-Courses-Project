@@ -5,7 +5,7 @@ function Cards(props) {
     let courses = props.courses; 
 
     let category = props.category;
-    // console.log("printing data");
+ // console.log("printing data");
     // console.log(courses);  
 
     const [likedCourses,setLikedCourses] = useState([]);

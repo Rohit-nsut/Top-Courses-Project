@@ -35,7 +35,7 @@ function Card(props) {
                 <button onClick={clickHandler}>
                     {
                         likedCourses.includes(course.id) ?
-                        <FcLike fontSize="1.6rem" /> :
+                        <FcLike fontSize="1.6rem"/> :
                         <FcLikePlaceholder fontSize="1.4rem" />
                     }
                 </button>
