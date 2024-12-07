@@ -8,6 +8,9 @@ import { apiUrl , filterData } from "./data";
 import { toast } from "react-toastify";
 import { useEffect, useState } from "react";
 
+import Testimonials from "./Components/Testimonials";
+import reviews from "./data1";
+
 function App() {
 
   const [courses , setCourses] = useState(null);
@@ -52,6 +55,19 @@ function App() {
           loading ? (<Spinner/>) : (<Cards courses={courses} category={category} />)
         }
       </div>
+
+      <div className="w-[100vw] h-[100vh] bg-blue-200 flex justify-center items-center" >
+
+      <div className="flex flex-col justify-center items-center">
+
+        <h1 className="text-2xl sm:text-4xl font-bold ">Our Testimonials</h1>
+        <div className="w-28 h-1 mt-1 bg-blue-400"></div>
+        <Testimonials reviews={reviews} />
+
+      </div>
+
+
+    </div>
 
     </div>
   );
